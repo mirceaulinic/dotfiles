@@ -1,0 +1,38 @@
+[user]
+	name = Mircea Ulinic
+	email = mircea.ulinic@gmail.com
+[core]
+    excludesfile = ~/.gitignore
+[color]
+    branch = auto
+    diff = auto
+    status = auto
+    interactive = auto
+[color "branch"]
+    current = yellow reverse
+    local = yellow
+    remote = green
+[color "diff"]
+    meta = yellow bold
+    frag = magenta bold
+    old = red bold
+    new = green bold
+[color "status"]
+    added = yellow
+    changed = green
+    untracked = cyan
+[alias]
+    st = status
+    ci = commit
+    br = branch
+    co = checkout
+    df = diff
+    lol = log --graph --decorate --pretty=oneline --abbrev-commit
+    lola = log --graph --decorate --pretty=oneline --abbrev-commit --all
+    lg = log --color --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --
+    l1 = log --pretty=oneline --abbrev-commit
+[core]
+    quotepath = false
+    excludesfile = ~/.gitignore
+[push]
+    default = tracking
