@@ -76,6 +76,7 @@ if !has('gui_running')
 endif
 
 au BufRead,BufNewFile *.maude set filetype=maude
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 
 set background=dark
 let g:solarized_termcolors=256
