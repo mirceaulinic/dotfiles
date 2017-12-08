@@ -11,3 +11,6 @@
 
 # This lets you hit tab to auto-complete a file or directory name ignoring case
 set completion-ignore-case On
+set visible-stats on
+set page-completions off
+TAB: menu-complete
