@@ -54,6 +54,10 @@ set splitbelow
 au InsertEnter * set listchars-=trail:•
 au InsertLeave * set listchars+=trail:•
 
+" Toggle spell check
+set spell spelllang=en_gb
+nmap <C-M><C-M> :setlocal spell spelllang=en_gb<CR>
+
 " clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<CR>
 
