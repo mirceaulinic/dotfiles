@@ -41,6 +41,8 @@ function parse_git_dirty {
   # [[ $(git status 2> /dev/null | tail -n1) != "nothing to commit (working directory clean)" ]] && echo "☠"
   echo "$(parse_git_added)$(parse_git_modified)$(parse_git_deleted)"
 }
+# Run this for mac:
+# $ brew install bash bash-completion git
 function parse_git_branch {
   echo "$(parse_git_dirty)$(__git_ps1 '%s')"
 }
