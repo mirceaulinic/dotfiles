@@ -1,5 +1,6 @@
 " Init pathogen
 execute pathogen#infect()
+call pathogen#helptags()
 
 " Incldde Vundle and execute
 set rtp+=~/.vim/bundle/Vundle.vim
