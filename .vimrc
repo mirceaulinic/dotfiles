@@ -1,6 +1,12 @@
 " Init pathogen
 execute pathogen#infect()
 
+" Incldde Vundle and execute
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Bundle 'Rykka/riv.vim'
+
 set tabstop=4
 set shiftwidth=4
 set expandtab
