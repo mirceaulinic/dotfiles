@@ -1,5 +1,12 @@
 " Init pathogen
 execute pathogen#infect()
+call pathogen#helptags()
+
+" Incldde Vundle and execute
+set rtp+=~/.vim/bundle/Vundle.vim
+call vundle#begin()
+Plugin 'VundleVim/Vundle.vim'
+Bundle 'Rykka/riv.vim'
 
 set tabstop=4
 set shiftwidth=4
@@ -61,6 +68,9 @@ nmap <C-M><C-M> :setlocal spell spelllang=en_gb<CR>
 " clear the search buffer when hitting return
 nnoremap <CR> :nohlsearch<CR>
 
+" Gundo key
+nnoremap <F5> :GundoToggle<CR>
+
 " Open where I left off
 set viminfo='1000,\"1000,:20,%,n~/.viminfo
 au BufReadPost * if line("'\"") > 0|if line("'\"") <= line("$")|exe("norm '\"")|else|exe "norm $"|endif|endif
@@ -76,6 +86,7 @@ if !has('gui_running')
 endif
 
 au BufRead,BufNewFile *.maude set filetype=maude
+au BufNewFile,BufRead *.yaml,*.yml so ~/.vim/yaml.vim
 
 set background=dark
 let g:solarized_termcolors=256
