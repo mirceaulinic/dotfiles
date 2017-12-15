@@ -3,4 +3,5 @@ alias json='python -mjson.tool'
 alias less='less -R'
 alias jobs='jobs -l'
 alias fetch='git checkout master && git fetch && git pull --rebase'
-
+alias ssh-netops01='ssh -4A mircea@no1'
+alias ssh-netops03='ssh -4A mircea@no3'

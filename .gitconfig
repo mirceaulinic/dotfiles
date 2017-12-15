@@ -1,6 +1,6 @@
 [user]
-	name = Mircea Ulinic
-	email = mircea.ulinic@gmail.com
+    name = Mircea Ulinic
+    email = mirucha@cloudflare.com
 [core]
     excludesfile = ~/.gitignore
 [color]
