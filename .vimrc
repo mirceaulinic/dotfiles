@@ -112,7 +112,8 @@ set ruler
 set wrap
 set textwidth=120
 set formatoptions=qrn1
-set colorcolumn=120
+set colorcolumn=80,100,120
+set fo+=w
 
 set backspace=2
 set backspace=indent,eol,start
